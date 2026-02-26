@@ -1,53 +1,201 @@
-<section id="process" class="mb-32">
-    <h2 class="text-3xl font-bold mb-8">Процесс проектирования учебного проекта </h2>
-    <p class="text-slate-500 mb-10 max-w-2xl">От глубокой аналитики бизнеса до детального проектирования учебных событий по таксономии Блума.</p>
-    
-    <div class="space-y-4">
-        <details class="group bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden" open>
-            <summary class="p-6 cursor-pointer flex justify-between items-center font-bold text-indigo-600 bg-indigo-50/50">
-                <span>01. Аналитика и Исследование (Research)</span>
-                <span class="transition group-open:rotate-180">▼</span>
-            </summary>
-            <div class="p-6 text-sm text-slate-600 space-y-3 border-t border-slate-100">
-                <p><b>Действия:</b> Брифинг заказчика, формулировка бизнес-целей (CABD), сегментация ЦА, анализ вакансий конкурентов.</p>
-                <p><b>Результат:</b> Выявлен «барьер глупого вопроса» у новичков на удаленке и потребность в «едином источнике правды».</p>
-            </div>
-        </details>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лера | Проектирование опыта: Цифровой Бадди</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Manrope', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }
+        .buddy-bubble { position: relative; background: #f3f4f6; border-radius: 20px; border-bottom-left-radius: 2px; }
+        .progress-bar { height: 4px; background: #e2e8f0; width: 100%; border-radius: 10px; overflow: hidden; }
+        .progress-fill { height: 100%; background: #6366f1; width: 65%; }
+        details summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
 
-        <details class="group bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden">
-            <summary class="p-6 cursor-pointer flex justify-between items-center font-bold text-indigo-600">
-                <span>02. Проектирование и Методология (Design)</span>
-                <span class="transition group-open:rotate-180">▼</span>
-            </summary>
-            <div class="p-0 overflow-x-auto border-t border-slate-100">
-                <table class="w-full text-left text-xs border-collapse">
-                    <thead class="bg-slate-50">
-                        <tr>
-                            <th class="p-4 font-bold border-b">Модуль</th>
-                            <th class="p-4 font-bold border-b">Формат</th>
-                            <th class="p-4 font-bold border-b">Уровень Блума</th>
-                            <th class="p-4 font-bold border-b">Метод оценки</th>
+    <header class="hero-gradient text-white py-24 px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10 text-center md:text-left">
+            <span class="bg-white/20 backdrop-blur-md px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-widest italic">Кейс: Проектирование обучения (LXD)</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mt-8 mb-6 tracking-tight">Цифровой Бадди</h1>
+            <p class="text-xl md:text-2xl opacity-90 max-w-3xl font-light leading-relaxed">
+                Снижение текучести кадров на удаленке через персональную траекторию адаптации и управление состоянием новичка.
+            </p>
+            <div class="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="#strategy" class="bg-white text-indigo-600 px-8 py-3 rounded-xl font-bold hover:shadow-xl transition">Стратегия</a>
+                <a href="#demo" class="border border-white/30 px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition">Демонстрация модуля</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        
+        <section id="strategy" class="grid md:grid-cols-3 gap-12 mb-32">
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-bold mb-8">Бизнес-цели и контекст (CABD)</h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-indigo-500 pl-6">
+                        <h4 class="font-bold text-sm uppercase text-indigo-600 tracking-wider">Ситуация (Context)</h4>
+                        <p class="text-slate-600 mt-1">Удаленная ИТ-команда SkyTech. Новички испытывают информационный шок и стресс изоляции в первую неделю, что ведет к текучести кадров (22%).</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-500 pl-6">
+                        <h4 class="font-bold text-sm uppercase text-indigo-600 tracking-wider">Решение (Action)</h4>
+                        <p class="text-slate-600 mt-1">Интерактивный навигатор в формате микрообучения. Проектирование «бесшовного» входа в процессы через решение реальных проблем новичка.</p>
+                    </div>
+                    <div class="border-l-4 border-indigo-500 pl-6">
+                        <h4 class="font-bold text-sm uppercase text-indigo-600 tracking-wider">Выгода (Benefit)</h4>
+                        <p class="text-slate-600 mt-1">Снижение текучести до 15%. Сокращение времени выхода на продуктивность на 15%. Экономия ресурсов HR-команды.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-2xl self-start">
+                <h3 class="text-xl font-bold mb-6">Методология</h3>
+                <ul class="space-y-4 text-xs opacity-80 font-light">
+                    <li>● <b>Backward Design:</b> От результата к контенту</li>
+                    <li>● <b>PBL:</b> Обучение через задачи</li>
+                    <li>● <b>Microlearning:</b> Фокус 7-10 минут</li>
+                    <li>● <b>Scaffolding:</b> Поддержка в процессе</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-32">
+            <h2 class="text-3xl font-bold mb-8">Карта образовательного опыта (SJM)</h2>
+            <div class="overflow-x-auto bg-white rounded-3xl shadow-xl border border-slate-200">
+                <table class="w-full text-left border-collapse min-w-[900px]">
+                    <thead>
+                        <tr class="bg-slate-900 text-white">
+                            <th class="p-5 uppercase text-[10px] tracking-widest opacity-50">Слой / Этап</th>
+                            <th class="p-5 border-l border-slate-700">1. Пре-бординг (До)</th>
+                            <th class="p-5 border-l border-slate-700">2. Обучение (Во время)</th>
+                            <th class="p-5 border-l border-slate-700">3. Интеграция (После)</th>
                         </tr>
                     </thead>
-                    <tbody class="divide-y divide-slate-100">
-                        <tr><td class="p-4">Survival Kit</td><td class="p-4">Лонгрид + Процесс</td><td class="p-4">Применение</td><td class="p-4">Чек-лист самопроверки</td></tr>
-                        <tr><td class="p-4">Навигатор</td><td class="p-4">Интерактивная карта</td><td class="p-4">Понимание</td><td class="p-4">Тест на соответствие</td></tr>
-                        <tr><td class="p-4">Этика Slack</td><td class="p-4">Диалоговый сценарий</td><td class="p-4">Анализ</td><td class="p-4">Разбор кейса (Feedback)</td></tr>
-                        <tr><td class="p-4">Цели 90 дней</td><td class="p-4">SMART-тренажер</td><td class="p-4">Создание</td><td class="p-4">Выбор целей из списка</td></tr>
+                    <tbody class="divide-y divide-slate-100 text-sm">
+                        <tr><td class="p-4 bg-slate-50 font-bold">Эмоция</td><td class="p-4">🤩 Ожидание</td><td class="p-4 bg-indigo-50/30 font-bold text-indigo-700 italic">😰 Шок ➡️ 🙂 Облегчение</td><td class="p-4 text-green-600 font-bold">💪 Уверенность</td></tr>
+                        <tr><td class="p-4 bg-slate-50 font-bold">Нагрузка</td><td class="p-4 text-green-500">Низкая</td><td class="p-4 bg-indigo-50/30 text-red-500 font-bold italic underline">Пиковая нагрузка</td><td class="p-4 text-blue-500">Распределенная</td></tr>
+                        <tr><td class="p-4 bg-slate-50 font-bold">Мотивация</td><td class="p-4 italic text-slate-400">Внешняя (статус)</td><td class="p-4 bg-indigo-50/30 italic font-bold">Внутренняя (решение боли)</td><td class="p-4 italic text-slate-400">Профессиональная</td></tr>
+                        <tr><td class="p-4 bg-slate-50 font-bold">Среда</td><td class="p-4 italic text-slate-400">Email, Offer</td><td class="p-4 bg-indigo-50/30">LMS, Slack. Роль: Бадди</td><td class="p-4 italic text-slate-400">Jira, Команда. Роль: Наставник</td></tr>
                     </tbody>
                 </table>
             </div>
-        </details>
+        </section>
 
-        <details class="group bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden">
-            <summary class="p-6 cursor-pointer flex justify-between items-center font-bold text-indigo-600">
-                <span>03. Разработка и Визуализация (Development)</span>
-                <span class="transition group-open:rotate-180">▼</span>
-            </summary>
-            <div class="p-6 text-sm text-slate-600 border-t border-slate-100">
-                <p><b>Действия:</b> Сборка интерактивного лонгрида, копирайтинг учебных текстов, настройка логики обратной связи в сценариях.</p>
-                <p><b>Инструменты:</b> Figma, GitHub, (планируемый экспорт в Articulate Rise).</p>
+        <section class="mb-32">
+            <h2 class="text-3xl font-bold mb-8">Процесс проектирования (ID Workflow)</h2>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden" open>
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-bold text-indigo-600 bg-indigo-50/30 list-none">
+                        <span>Этап 1: Исследование и Аналитика</span>
+                        <span class="transition group-open:rotate-180">▼</span>
+                    </summary>
+                    <div class="p-6 text-sm text-slate-600 border-t border-slate-100">
+                        <p><b>Действия:</b> Сегментация ЦА, анализ вакансий, выявление барьеров новичка на удаленке. Формулировка образовательных результатов по модели CABD.</p>
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                    <summary class="p-6 cursor-pointer flex justify-between items-center font-bold text-indigo-600 list-none">
+                        <span>Этап 2: Проектирование по таксономии Блума</span>
+                        <span class="transition group-open:rotate-180">▼</span>
+                    </summary>
+                    <div class="p-0 overflow-x-auto border-t border-slate-100">
+                        <table class="w-full text-left text-xs border-collapse">
+                            <thead class="bg-slate-50">
+                                <tr><th class="p-4 border-b uppercase opacity-50">Модуль</th><th class="p-4 border-b uppercase opacity-50">Уровень Блума</th><th class="p-4 border-b uppercase opacity-50">Технология оценивания</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                <tr><td class="p-4 font-bold italic">Survival Kit</td><td class="p-4">Применение</td><td class="p-4">Чек-лист готовности рабочего места</td></tr>
+                                <tr><td class="p-4 font-bold italic">Этика Slack</td><td class="p-4">Анализ / Оценка</td><td class="p-4">Разбор ситуации (Диалоговый сценарий)</td></tr>
+                                <tr><td class="p-4 font-bold italic">Цели 90 дней</td><td class="p-4">Создание</td><td class="p-4">Тренажер формулирования целей по SMART</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
             </div>
-        </details>
-    </div>
-</section>
+        </section>
+
+        <section id="demo" class="mb-32">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Демонстрация учебного модуля</h2>
+                <p class="text-slate-500 text-lg">Визуализация взаимодействия студента с курсом</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-[40px] shadow-2xl overflow-hidden border border-slate-200">
+                <div class="p-8 border-b border-slate-100 flex justify-between items-center bg-slate-50/50">
+                    <div>
+                        <span class="text-[10px] uppercase tracking-widest font-bold text-indigo-500">Урок 2.1</span>
+                        <h3 class="text-2xl font-bold">Цифровая этика: Культура Slack</h3>
+                    </div>
+                    <div class="w-32 hidden md:block">
+                        <div class="progress-bar mb-1"><div class="progress-fill"></div></div>
+                        <span class="text-[10px] text-slate-400 font-bold">65% ПРОЙДЕНО</span>
+                    </div>
+                </div>
+
+                <div class="p-8 md:p-16 space-y-12">
+                    <div class="flex gap-6 items-start">
+                        <div class="w-16 h-16 bg-indigo-100 rounded-full flex-shrink-0 flex items-center justify-center text-2xl shadow-inner">🤖</div>
+                        <div class="buddy-bubble p-6 shadow-sm border border-slate-100">
+                            <p class="text-lg leading-relaxed italic text-slate-700">«Привет! В SkyTech мы не любим бюрократию, но обожаем Slack. Давай научимся использовать его так, чтобы тебя любили, а не ставили на мьют».</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-indigo-300 transition group cursor-pointer">
+                            <h4 class="font-bold text-indigo-600 mb-2 uppercase text-[10px] tracking-widest">Принцип 1</h4>
+                            <p class="font-bold text-xl mb-4">Тред вместо флуда</p>
+                            <p class="text-sm text-slate-500">Любой ответ на сообщение пишем только в ветке (Reply to thread). Это сохраняет чистоту общего канала.</p>
+                        </div>
+                        <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-indigo-300 transition group cursor-pointer">
+                            <h4 class="font-bold text-indigo-600 mb-2 uppercase text-[10px] tracking-widest">Принцип 2</h4>
+                            <p class="font-bold text-xl mb-4">Статус — твой щит</p>
+                            <p class="text-sm text-slate-500">Видишь эмодзи 🎧 или 🗓 — не жди мгновенного ответа. Коллега сфокусирован или на встрече.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-indigo-900 rounded-[35px] p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
+                        <div class="relative z-10">
+                            <h4 class="text-center text-indigo-300 font-bold uppercase tracking-widest text-[10px] mb-6">Проверка понимания</h4>
+                            <p class="text-2xl font-bold text-center mb-10">Пятница, 18:30. У тебя сломался доступ, а руководитель на встрече. Твои действия?</p>
+                            <div class="space-y-4 max-w-lg mx-auto">
+                                <button class="w-full py-4 px-6 border border-white/20 rounded-2xl text-left hover:bg-white/10 transition text-sm">
+                                    <span class="opacity-40 mr-4">А.</span> Написать в личку: «Помоги, всё упало!»
+                                </button>
+                                <button class="w-full py-4 px-6 border border-indigo-400 bg-indigo-800 rounded-2xl text-left text-sm ring-4 ring-indigo-500/30">
+                                    <span class="opacity-40 mr-4 font-bold">Б.</span> Написать в #it_support и тегнуть дежурного.
+                                </button>
+                            </div>
+                            <p class="mt-8 text-center text-sm text-indigo-200">✅ <b>Правильно!</b> Ты решаешь задачу, не создавая тревоги у коллег.</p>
+                        </div>
+                        <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-indigo-800 rounded-full opacity-50 blur-3xl"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-3xl mx-auto text-center border-t border-slate-200 pt-20">
+            <h2 class="text-2xl font-bold mb-6 italic tracking-tight">Взгляд проектировщика</h2>
+            <p class="text-slate-600 text-lg leading-relaxed mb-10 font-light">
+                «В этом проекте я сознательно ушла от формата "базы знаний" в сторону "эмпатичного помощника". Главная ценность курса — снижение когнитивной нагрузки на новичка в самый стрессовый период. Проектирование на стыке психологии и бизнес-задач позволило создать инструмент, который действительно работает на удержание талантов».
+            </p>
+            <div class="flex justify-center items-center gap-4">
+                <div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">Л</div>
+                <div class="text-left">
+                    <p class="font-bold">Лера</p>
+                    <p class="text-[10px] text-slate-400 uppercase tracking-[0.2em] font-black">T&D Specialist / LX Designer</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-white py-12 px-6 mt-20 text-center">
+        <p class="opacity-40 text-[10px] uppercase tracking-[0.5em] font-bold">Проектирование опыта | Портфолио 2026</p>
+    </footer>
+
+</body>
+</html>
+
